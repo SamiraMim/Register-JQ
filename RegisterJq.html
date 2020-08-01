@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registeration</title>
+        <link rel="stylesheet" href="RegisterJq.css">
+        <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="wrapper">
+          <div class="title">
+              فرم ثبت نام
+          </div>
+          <form name="vForm" id="vForm" method="POST" action="action.php">
+            <div class="form">
+                <div class="input_field">
+                    <input type="text" id="firstname" name="firstname" class="input">
+                    <label for="firstname">نام</label><br>
+                </div>
+                <p id="fname_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="text" id="lastname" name="lastname" class="input">
+                    <label for="lastname">نام خانوادگی</label>
+                </div>
+                <p id="lname_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="password" id="password" name="password" class="input">
+                    <label for="password">رمزعبور</label>
+                </div>
+                <p id="password_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="password" id="pass_confirm" name="pass_confirm" class="input">
+                    <label for="pass_confirm">تایید رمزعبور</label>
+                </div>
+                <p id="pass_confirm_err" class="error_msg"></p>
+                <div class="input_field">
+                    <div class="custom_select">
+                      <select id="gender" name="gender">
+                          <option value="0">انتخاب کنید</option>
+                          <option value="1"> مرد</option>
+                          <option value="2">زن</option>
+                      </select>
+                    </div>
+                    <label for="gender">جنسیت</label>
+                </div>
+                <p id="gender_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" class="input">
+                    <label for="email">ایمیل</label>
+                </div>
+                <p id="email_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="number" id="phone" name="phone" class="input">
+                    <label for="phone">شماره تماس</label>
+                </div>
+                <p id="phone_err" class="error_msg"></p>
+                <div class="input_field">
+                    <textarea id="address" name="address" class="textarea"></textarea>
+                    <label for="address">آدرس</label>
+                </div>
+                <p id="address_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="number" id="post" name="post" class="input">
+                    <label for="post">کد پستی</label>
+                </div>
+                <p id="post_err" class="error_msg"></p>
+                <div class="input_field terms">
+                    <p>موافقت با شرایط و ضوابط سایت</p>
+                    <label class="check">
+                        <input type="checkbox" id="rule" name="rule">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <p id="rule_err" class="error_msg"></p>
+                <div class="input_field">
+                    <input type="submit" value="ثبت نام"  class="btn">
+                </div>
+            </div>
+          </form>
+      </div> 
+      <script src="RegisterJq.js"></script>
+    </body>
+</html>
